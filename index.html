@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label, input {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <label for="dark">Dark theme will start at</label>
+  <input id="dark" type="time" required="true"/>
+  <label for="light">Light theme will start at</label>
+  <input id="light" type="time" required="true"/>
+  <div
+    style="
+      display: flex;
+      justify-content: space-between;
+    "
+  >
+    <label for="enabled">Enabled</label>
+    <input id="enabled" type="checkbox"/>
+  </div>
+  <script src="./script.js" type="module"></script>
+</body>
+</html>

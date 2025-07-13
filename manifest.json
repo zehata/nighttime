@@ -1,0 +1,23 @@
+{
+	"name": "Nighttime",
+	"version": "1.0",
+	"manifest_version": 3,
+  "action": {
+    "default_popup": "index.html"
+  },
+	"permissions": [
+		"alarms",
+		"storage",
+		"browserSettings"
+	],
+  "background": {
+    "scripts": ["background.js"],
+		"type": "module"
+  },
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "nighttime@zehata.dev",
+			"strict_min_version": "58.0"
+		}
+	}
+}
