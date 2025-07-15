@@ -20,5 +20,6 @@ const onload = async () => {
 }
 onload();
 
-// onload will run when alarm triggers
+// onload will run when browser starts or when alarm triggers
+browser.runtime.onStartup.addListener(() => {});
 browser.alarms.onAlarm.addListener(() => {});
